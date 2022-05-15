@@ -1,0 +1,52 @@
+<div id="container-instructions">
+
+	<h1>Instructions</h1>
+
+	<hr />
+
+	<div class="instructions well">
+
+	    <p>
+		    Welcome to the experiment.<br><br>
+	    </p>
+
+	    <p>
+	    	In this experiment, you will perform a series of tasks such as:</p>
+          <p> 1) watching a movie and describing the movie from your memory </p>
+          <p> 2) generating a written description of a picture </p>
+          <p> 3) a series of short surveys<br><br></p>
+        	    
+        <p>
+		    It will take 40~60 minutes to finish all tasks.
+	    </p>
+
+        <script type="text/javascript">
+            //console.log(psiTurk.getInstructionIndicator())
+
+			//disable next button for a specied time delay following load
+			setTimeout(function() {
+				document.getElementById("next").disabled = false}, Instruct_Delay)
+
+        </script>
+
+	</div>
+
+	<hr />
+
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,76 @@
+<div id="container-questionnaire">
+    <h1>Post-recall questionnaire - 3/4</h1>
+
+    <hr>
+
+    <p><b>Please answer the following questions and click "Continue".</b></p>
+
+    <div class="instructions well">
+
+        <form id="postquiz" action="debrief" method="post">
+
+            <!-- beginning of a question -->
+            <div class="row question">
+               <p><b>1.</b> Before this HIT, had you ever seen the movie you watched and recalled in this experiment before?  </p>       
+                    <select id="watchedbefore" name="watchedbefore">
+                        <option value="Y">Yes </option>
+                        <option value="N">No </option>
+                        <option value="" disabled selected>Select option</option>
+                    </select>
+            </div>
+            <!-- end of a question -->
+
+            <!-- beginning of a question -->
+            <div class="row question">
+                <p><b>2.</b> Did you encounter any problem with the experiment (e.g., the sound did not work, the movie froze in the middle)? </p>
+                <select id="issue" name="issue">
+                    <option value="Y">Yes </option>
+                    <option value="N">No </option>
+                    <option value="" disabled selected>Select option</option>
+                </select>
+                <p><br>If you have selected "Yes," what was the problem?</p>
+                <textarea id="issue_text" name="issue_text" rows="4" cols="60"></textarea>
+            </div>            
+            <!-- end of a question -->
+            
+            <!-- beginning of a question -->
+            <div class="row question">
+                <p><b>3.</b>Were you engaging in other tasks while performing this experiment (e.g., listening to music, watching a video, browsing the internet)?</p>
+                  <select id="subj_attention" name="subj_attention">
+                      <option value="Y">Yes</option>
+                      <option value="N">No</option>
+                      <option value="" disabled selected>Select option</option>
+                  </select>
+                <p><br>If so, what were you doing? (NOTE: This is for research purposes only. It will <i>NOT</i> affect your payment or ratings.)<p>
+                <textarea id="subj_attention_text" name="subj_attention_text" rows="4" cols="60"></textarea>
+            </div>
+            
+            <!-- beginning of a question -->
+            <div class="row question">
+                <p><b>4.</b> What did you think of the movie? Did you like or dislike it?  </p>
+                <textarea id="moviethoughts" name="moviethoughts" rows="4" cols="60"></textarea>
+            </div>            
+            <!-- end of a question -->
+
+        </form>
+    </div>
+
+    <hr>
+
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

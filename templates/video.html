@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+video::-webkit-media-controls-fullscreen-button, video::-webkit-media-controls-play-button, video::-webkit-media-controls-pausebutton {
+    display: none;
+}
+
+.button{
+  width: 10%;
+  margin: 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+</style>
+</head>
+<body>
+
+<div>
+  <video id = "video" style="display:block; margin: 0 auto; position: relative; top: 100px; pointer-events: none;" class = movie width="80%">
+  </video>
+</div>
+
+<div>
+    <button type="button" id="next" value="next" class="button btn-primary btn-lg continue" onclick="playVid()">Click Here to Start Video!</button>
+</div>
+
+<script>
+// define video as variable
+var vid = document.getElementById("video");
+
+// function to play video
+function playVid() {
+  vid.play();
+  document.getElementById('next').style.display = "none"
+}
+</script>
+
+</body>
+</html>

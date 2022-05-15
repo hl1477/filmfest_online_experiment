@@ -1,0 +1,65 @@
+<div id="container-questionnaire">
+    <h1>Pre-recall task 1/3</h1>
+
+    <hr>
+
+    <p><b>Please answer the following questions and click "Continue".</b></p>
+    
+    <div class="instructions well">
+        <div class="row question">
+            <b>1.</b> What is your age? Enter your age in the box below: <br>
+            <textarea id="Age" name="Age" rows="1" cols="7"></textarea>
+        </div>
+            
+        <div class="row question">
+            <b>2.</b> What is your gender?
+                <select id="Gender" name="Gender">
+                    <option value="F">Female </option>
+                    <option value="M">Male </option>
+                    <option value="O">Other </option>
+                    <option value="" disabled selected>Select option</option>
+                </select>
+        </div>   
+        
+        <div class="row question">
+            <b>3.</b> Is English your first language?
+                <select id="English" name="English">
+                    <option value="Y">Yes </option>
+                    <option value="N">No </option>
+                    <option value="" disabled selected>Select option</option>
+                </select>
+        <br>---If you have selected "NO," in what age did you start using English in your everyday life?
+        <textarea id="English-startage" name="English-startage" rows="1" cols="7"></textarea>
+        </div>  
+
+        <div class="row question">
+            <b>4.</b> How often do you watch TV or movies?
+                <select id="TVfreq" name="TVfreq">
+                    <option value="1">Almost never </option>
+                    <option value="2">Around once per week </option>
+                    <option value="3">A few times per week </option>
+                    <option value="4">Almost every day </option>
+                    <option value="5">Multiple hours every day </option>
+                    <option value="" disabled selected>Select option</option>
+                </select>
+        </div>   
+
+    </div> 
+    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    
+#recall_instructions {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 1.1em;
+}
+#recall_picture {
+  text-align: center;
+}
+#recall_notes {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 75%;
+}
+#recall_input {
+  text-align: center;
+  font-size: 24pt;
+  line-height: normal;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+#recall_focus {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 1.1em;
+  display: block;
+  margin: 0 auto;
+}
+#button_box {
+  text-align: center;
+  font-size: 24pt;
+}
+
+</style>
+</head>
+
+<div id="container-typetext">
+    
+    <div id="recall_instructions" class="stim-div">
+      <p><br><br><br><b>Use the keyboard to re-tell the entire story of the movie in your own words.
+      <br>Provide as much detail as you can remember.</b></p> 
+      <p>You will not be able to backspace beyond the current line. <br> If at any time you realize that you forgot to mention something earlier, <br> go ahead and mention it at that time. <br> Completeness is more important than the order of the story.</p>
+      <p>You will be able to move onto the next stage of the experiment in a few minutes,<br>
+      but please take as long as needed to provide a detailed re-telling.</p>
+
+    </div>
+    <br><br>
+    <div id="recall_notes" class="stim-div">
+      <p><font size=4 color=red><b>Note #1</b>: you will <i>not</i> be able to use backspace beyond the sentence you are currently writing. </font></p>
+      <p><font size=4 color=red><b>Note #2</b>: you will <i>not</i> be able to use your cursor on the textbox. <br><i>To reselect the text box, click the "Activate the Text Box" button!</i></font></p>
+    </div>
+
+    <br>
+    <textarea id="recall_input" tabindex="-1" rows="1" cols="50" placeholder="Type here!" name="recall" style="overflow:hidden;resize:none;"  onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete="off" autofocus="autofocus"></textarea>
+    <br>
+
+    <button id="recall_focus" type="button" onclick="getfocus()">Activate the Text Box!</button><br><br>
+
+      <script type="text/javascript">
+      //console.log(psiTurk.getInstructionIndicator())
+
+        //define variable  for recall  input
+        var inp = document.getElementById('recall_input');
+
+        //add event listener to prevent selecting
+        inp.addEventListener('select', function() {
+          this.selectionStart = this.selectionEnd;
+        }, false);
+
+        //add event listener to prevent inappropriate  keypresses
+        inp.addEventListener('keydown', function(event) {
+          const key = event.key; // const {key} = event; ES6+
+          if (key === "Backspace") {
+           if(inp.value.slice(-1) === "?" || inp.value.slice(-1) === "!" || inp.value.slice(-1) === "."){
+            event.preventDefault();
+           }
+          } else if (key == "Enter" || key == "ArrowLeft"  || key == "ArrowRight" || key == "ArrowUp" || key == "ArrowDown") {
+            event.preventDefault();
+          }
+        });
+
+        //define function to refocus on text box
+        function getfocus() {
+          document.getElementById("recall_input").focus();
+        }
+
+        //disable next button for a specied time delay following load
+        setTimeout(function() {
+          document.getElementById("next").disabled = false}, Recall_Delay)
+
+      </script>
+
+      <div id=button_box class="instructionsnav">
+          <div class="row">
+              <div class="col-xs-8">
+              </div>
+              <div class="col-xs-2">
+                  <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                  Finished! <span class="glyphicon glyphicon-arrow-right"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+    </div>
+</html>

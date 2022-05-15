@@ -1,0 +1,43 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>Before you start the experiment, we will show you an example of the movie memory test.</p>
+        <p>We will show you a very short (2 minutes) movie <br>and then show you an example of someone's memory of that movie.</p>
+        <p>We included this example to help give you an idea of <br>the level of memory detail we hope to get when it's your turn!</p>
+
+        <script type="text/javascript">
+            //console.log(psiTurk.getInstructionIndicator())
+
+			//disable next button for a specied time delay following load
+			setTimeout(function() {
+				document.getElementById("next").disabled = false}, Instruct_Delay)
+
+        </script>
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+                <button type="button" id="prev" value="prev" class="btn btn-primary btn-lg previous" >
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    form .statement {
+        display:block;
+        font-size: 16px;
+        padding: 30px 0 0 4.25%;
+        margin-bottom:10px;
+    }
+    form .likert {
+      list-style:none;
+      width:100%;
+      margin:0;
+      padding:0 0 20px;
+      display:block;
+      border-bottom:2px solid #efefef;
+    }
+    form .likert:last-of-type {border-bottom:0;}
+    form .likert:before {
+      content: '';
+      position:relative;
+      top:11px;
+      left:7%;
+      display:block;
+      background-color:darkgray;
+      height:3px;
+      width:80%;
+    }
+    form .likert li {
+      display:inline-block;
+      width:13%; 
+      text-align:center;
+      vertical-align: top;
+    }
+    form .likert li input[type=radio] {
+      display:block;
+      position:relative;
+      top:0;
+      left:50%;
+      margin-left:-6px;
+    }
+    form .likert li label {
+        width:100%;
+        font-size: 16px;
+        font-weight: lighter;
+        }
+    </style>
+</head>
+
+<div id="container-questionnaire">
+    <h1>Post-recall questionnaire 2/4</h1>
+
+    <hr>
+
+    <p><b>Please read the instruction carefully, answer all questions, and click "Continue".</b></p>
+    
+    <div class="instructions well">
+        
+        <div class="row question">
+        <p>This survey measures your ability to imagine different types of sensations. Imagine the following sensations and rate the vividness of your imagery on a 7-point scale.</p>
+          
+            <form action="">
+
+            <label class="statement">Imagine the appearance of <i>a bonfire</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="2"></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="3"></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="4"></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="5"></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="6"></li>
+              <li><input type="radio" id="PSIQ1" name="PSIQ1" value="7"><label>As vivid as real life</label></li>
+            </ul>
+
+            <label class="statement">Imagine the appearance of <i>a sunset</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="2"></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="3"></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="4"></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="5"></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="6"></li>
+              <li><input type="radio" id="PSIQ2" name="PSIQ2" value="7"><label>As vivid as real life</label></li>
+            </ul>
+                
+            <label class="statement">Imagine the appearance of <i>a cat climbing a tree</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="2"></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="3"></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="4"></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="5"></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="6"></li>
+              <li><input type="radio" id="PSIQ3" name="PSIQ3" value="7"><label>As vivid as real life</label></li>
+            </ul>
+                
+            <label class="statement">Imagine the sound of <i>a car horn</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="2"></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="3"></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="4"></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="5"></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="6"></li>
+              <li><input type="radio" id="PSIQ4" name="PSIQ4" value="7"><label>As vivid as real life</label></li>
+            </ul>
+                
+            <label class="statement">Imagine the sound of <i>hands clapping in applause</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="2"></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="3"></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="4"></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="5"></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="6"></li>
+              <li><input type="radio" id="PSIQ5" name="PSIQ5" value="7"><label>As vivid as real life</label></li>
+            </ul>
+                              
+            <label class="statement">Imagine the sound of <i>an ambulance siren</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="2"></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="3"></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="4"></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="5"></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="6"></li>
+              <li><input type="radio" id="PSIQ6" name="PSIQ6" value="7"><label>As vivid as real life</label></li>
+            </ul>
+                
+            <label class="statement">Imagine the smell of <i>newly cut grass</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="2"></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="3"></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="4"></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="5"></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="6"></li>
+              <li><input type="radio" id="PSIQ7" name="PSIQ7" value="7"><label>As vivid as real life</label></li>
+            </ul>                
+                
+            <label class="statement">Imagine the smell of <i>burning wood</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="2"></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="3"></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="4"></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="5"></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="6"></li>
+              <li><input type="radio" id="PSIQ8" name="PSIQ8" value="7"><label>As vivid as real life</label></li>
+            </ul>        
+                
+            <label class="statement">Imagine the smell of <i>a rose</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="2"></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="3"></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="4"></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="5"></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="6"></li>
+              <li><input type="radio" id="PSIQ9" name="PSIQ9" value="7"><label>As vivid as real life</label></li>
+            </ul>     
+                
+            <label class="statement">Imagine the taste of <i>black pepper</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="2"></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="3"></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="4"></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="5"></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="6"></li>
+              <li><input type="radio" id="PSIQ10" name="PSIQ10" value="7"><label>As vivid as real life</label></li>
+            </ul>     
+                
+            <label class="statement">Imagine the taste of <i>lemon</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="2"></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="3"></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="4"></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="5"></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="6"></li>
+              <li><input type="radio" id="PSIQ11" name="PSIQ11" value="7"><label>As vivid as real life</label></li>
+            </ul>                  
+                
+            <label class="statement">Imagine the taste of <i>mustard</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="2"></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="3"></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="4"></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="5"></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="6"></li>
+              <li><input type="radio" id="PSIQ12" name="PSIQ12" value="7"><label>As vivid as real life</label></li>
+            </ul>                   
+               
+            <label class="statement">Imagine touching <i>fur</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="2"></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="3"></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="4"></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="5"></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="6"></li>
+              <li><input type="radio" id="PSIQ13" name="PSIQ13" value="7"><label>As vivid as real life</label></li>
+            </ul>                       
+                
+             <label class="statement">Imagine touching <i>warm sand</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="2"></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="3"></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="4"></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="5"></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="6"></li>
+              <li><input type="radio" id="PSIQ14" name="PSIQ14" value="7"><label>As vivid as real life</label></li>
+            </ul>                    
+                
+             <label class="statement">Imagine touching <i>a soft towel</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="2"></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="3"></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="4"></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="5"></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="6"></li>
+              <li><input type="radio" id="PSIQ15" name="PSIQ15" value="7"><label>As vivid as real life</label></li>
+            </ul>        
+                
+             <label class="statement">Imagine the bodily sensation of <i>relaxing in a warm bath</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="2"></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="3"></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="4"></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="5"></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="6"></li>
+              <li><input type="radio" id="PSIQ16" name="PSIQ16" value="7"><label>As vivid as real life</label></li>
+            </ul>                   
+                
+            <label class="statement">Imagine the bodily sensation of <i>walking briskly in the cold</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="2"></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="3"></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="4"></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="5"></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="6"></li>
+              <li><input type="radio" id="PSIQ17" name="PSIQ17" value="7"><label>As vivid as real life</label></li>
+            </ul>     
+                
+             <label class="statement">Imagine the bodily sensation of <i>jumping into a swimming pool</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="2"></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="3"></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="4"></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="5"></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="6"></li>
+              <li><input type="radio" id="PSIQ18" name="PSIQ18" value="7"><label>As vivid as real life</label></li>
+            </ul>                  
+                
+              <label class="statement">Imagine feeling <i>excited</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="2"></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="3"></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="4"></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="5"></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="6"></li>
+              <li><input type="radio" id="PSIQ19" name="PSIQ19" value="7"><label>As vivid as real life</label></li>
+            </ul>                  
+ 
+            <label class="statement">Imagine feeling <i>relieved</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="2"></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="3"></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="4"></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="5"></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="6"></li>
+              <li><input type="radio" id="PSIQ20" name="PSIQ20" value="7"><label>As vivid as real life</label></li>
+            </ul>   
+                
+             <label class="statement">Imagine feeling <i>scared</i>.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="1"><label>Not vivid at all</label></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="2"></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="3"></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="4"></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="5"></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="6"></li>
+              <li><input type="radio" id="PSIQ21" name="PSIQ21" value="7"><label>As vivid as real life</label></li>
+            </ul>   
+                
+            </form>
+        </div>         
+    </div> 
+    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+    
+    

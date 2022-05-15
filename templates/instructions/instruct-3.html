@@ -1,0 +1,52 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>When you are ready, click next to begin!</p>
+
+        <p><b>Note</b>: to begin watching the example movie, click the button near the bottom of the screen.</p>
+        <p><b>You will not be able to pause the movie once it's started.</b></p>
+        <p>Please make sure you are ready before clicking the start button.</p>
+        <p><b>*******SOUND ON!!!*******</b></p>
+
+        <script type="text/javascript">
+            //console.log(psiTurk.getInstructionIndicator())
+
+			//disable next button for a specied time delay following load
+			setTimeout(function() {
+				document.getElementById("next").disabled = false}, Instruct_Delay)
+
+        </script>
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!--  Maybe not previous button on this screen? -->
+            	<!--
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            	-->
+            </div>
+            <div class="col-xs-8">
+            	<center>
+	                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue" disabled>
+	                Begin Example! <span class="glyphicon glyphicon-arrow-right"></span>
+	                </button>
+	            </center>
+            </div>
+            <div class="col-xs-2">
+
+            </div>
+        </div>
+    </div>
+
+</div>

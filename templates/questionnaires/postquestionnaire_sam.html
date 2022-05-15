@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    form .statement {
+        display:block;
+        font-size: 16px;
+        padding: 30px 0 0 4.25%;
+        margin-bottom:10px;
+    }
+    form .likert {
+      list-style:none;
+      width:100%;
+      margin:0;
+      padding:0 0 25px;
+      display:block;
+      border-bottom:2px solid #efefef;
+    }
+    form .likert:last-of-type {border-bottom:0;}
+    form .likert:before {
+      content: '';
+      position:relative;
+      top:11px;
+      left:9.5%;
+      display:block;
+      background-color:darkgray;
+      height:3px;
+      width:78%;
+    }
+    form .likert li {
+      display:inline-block;
+      width:19%; 
+      text-align:center;
+      vertical-align: top;
+    }
+    form .likert li input[type=radio] {
+      display:block;
+      position:relative;
+      top:0;
+      left:50%;
+      margin-left:-6px;
+    }
+    form .likert li label {
+        width:100%;
+        font-size: 16px;
+        font-weight: lighter;
+        }
+    </style>
+</head>
+
+<div id="container-questionnaire">
+    <h1>Post-recall questionnaire 1/4</h1>
+
+    <hr>
+
+    <p><b>Please read the instructions carefully, answer all questions, and click "Continue".</b></p>
+    
+    <div class="instructions well">
+        
+        <div class="row question">
+        <p>The following questions relate to your memory. Please indicate the degree to which you agree with each statement.</p>
+        <p><i>Event Memory</i></p>
+        <p>The first questions concern your memory for past events from a specific time and place for which you were personally involved. Events are defined as occurring within a day or less. For example, a three-week vacation is not considered a specific event, but something that happened on one day during your vacation is considered a specific event.</p>
+        <p>The questions apply to events that happened <i>at least</i> 3-4 weeks ago (as opposed to something that happened just a few days ago). When answering, don't think about just one event; rather, think about your general ability to remember specific past events.</p>
+          
+            <form action="">
+
+            <label class="statement">Specific events are difficult for me to recall.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM1" name="SAM1" value="5"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM1" name="SAM1" value="4"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM1" name="SAM1" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM1" name="SAM1" value="2"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM1" name="SAM1" value="1"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">When I remember events, in general I can recall objects that were in the environment.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM2" name="SAM2" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM2" name="SAM2" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM2" name="SAM2" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM2" name="SAM2" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM2" name="SAM2" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">When I remember events, I remember a lot of details.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM3" name="SAM3" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM3" name="SAM3" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM3" name="SAM3" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM3" name="SAM3" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM3" name="SAM3" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            </form>
+        </div> 
+
+        <div class="row question">
+        <p><i>Factual Memory</i></p>
+        <p>These questions concern your memory for facts, rather than specific events.</p>
+          
+            <form action="">
+                
+            <label class="statement">I can easily remember the names of famous people (sports figures, politicians, celebrities).</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM4" name="SAM4" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM4" name="SAM4" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM4" name="SAM4" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM4" name="SAM4" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM4" name="SAM4" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">I am very good at remembering information about people that I know (e.g., the names of a co-worker’s children, their personalities, places friends have visited etc.).</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM5" name="SAM5" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM5" name="SAM5" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM5" name="SAM5" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM5" name="SAM5" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM5" name="SAM5" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            </form>
+        </div> 
+        
+        <div class="row question">
+        <p><i>Spatial Memory</i></p>
+        <p>These questions deal with your spatial memory (i.e., your ability to orient yourself in new or old environments).</p>
+          
+            <form action="">
+                
+            <label class="statement">In general, my ability to navigate is better than most of my family/friends.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM6" name="SAM6" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM6" name="SAM6" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM6" name="SAM6" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM6" name="SAM6" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM6" name="SAM6" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">After I have visited an area, it is easy for me to find my way around the second time I visit.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM7" name="SAM7" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM7" name="SAM7" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM7" name="SAM7" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM7" name="SAM7" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM7" name="SAM7" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">I get lost easily, even in familiar areas.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM8" name="SAM8" value="5"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM8" name="SAM8" value="4"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM8" name="SAM8" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM8" name="SAM8" value="2"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM8" name="SAM8" value="1"><label>Strongly agree</label></li>
+            </ul>
+                
+            </form>
+        </div> 
+    
+        <div class="row question">
+        <p><i>Future Events</i></p>
+        <p>The final questions relate to your imagination of future events that are specific in time and place and involve yourself (an event that has not yet taken place, such as a particular day on the beach at your upcoming vacation).</p>
+          
+            <form action="">
+                
+            <label class="statement">When I imagine an event in the future, the event generates vivid mental images that are specific in time and place.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM9" name="SAM9" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM9" name="SAM9" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM9" name="SAM9" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM9" name="SAM9" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM9" name="SAM9" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            <label class="statement">When I imagine an event in the future, I can picture images (e.g. people, objects, etc.).</label>
+            <ul class='likert'>
+              <li><input type="radio" id="SAM10" name="SAM10" value="1"><label>Strongly disagree</label></li>
+              <li><input type="radio" id="SAM10" name="SAM10" value="2"><label>Disagree somewhat</label></li>
+              <li><input type="radio" id="SAM10" name="SAM10" value="3"><label>Neither agree nor disagree</label></li>
+              <li><input type="radio" id="SAM10" name="SAM10" value="4"><label>Agree somewhat</label></li>
+              <li><input type="radio" id="SAM10" name="SAM10" value="5"><label>Strongly agree</label></li>
+            </ul>
+
+            </form>
+        </div> 
+        
+    </div> 
+    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>

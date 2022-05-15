@@ -1,0 +1,55 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>You have finished the example. Now, you are ready to start the actual experiment!</p>
+
+        <p><b>You will first watch a short movie (5~10 minutes long). <br>
+            Your memory for this movie will be tested later. <br>
+            Specifically, we will ask you to describe the movie in your own words.</b></p>
+        <p>We would like you to use as much detail as possible, so please watch the movie carefully!<br></p>
+        
+        <p><b>Note</b>: you might need to wait a few seconds for the video to load.</p>
+        <p><b>*******SOUND ON!!!*******</b></p>
+
+        <script type="text/javascript">
+            //console.log(psiTurk.getInstructionIndicator())
+
+			//disable next button for a specied time delay following load
+			setTimeout(function() {
+				document.getElementById("next").disabled = false}, Instruct_Delay)
+
+        </script>
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!--  Maybe not previous button on this screen? -->
+            	<!--
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            	-->
+            </div>
+            <div class="col-xs-8">
+            	<center>
+	                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue" disabled>
+	                Begin experiment! <span class="glyphicon glyphicon-arrow-right"></span>
+	                </button>
+	            </center>
+            </div>
+            <div class="col-xs-2">
+
+            </div>
+        </div>
+    </div>
+
+</div>

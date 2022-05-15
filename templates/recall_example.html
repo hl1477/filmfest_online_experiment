@@ -1,0 +1,43 @@
+<div id="container-instructions">
+
+    <div id="recall_instructions" onclick="read_carefully()" class="stim-div">
+      <p><b>Here is an example of someone's description of the story from memory. <br>Please read it <i>carefully.</i></b><br></p>
+    </div>
+
+	<hr />
+
+	<div class="instructions well">
+
+	    <p>
+            We see two buffalo looking at something sticking out of the water. The buffalo on the right imagines that it's a log, but the buffalo on the left think it's an alligator. As the two are mooing at each other, the left buffalo throws a rock at it. Once again, the right buffalo continues to believe it's a log, but the left buffalo still thinks it's an alligator, this time poking the object with a stick. And for a third time, the right buffalo moos that it's a log, but this time, the left buffalo moos loudly and angrily that it's an alligator. The left buffalo steps on the object and gets eaten by the alligator. The right buffalo stares at the water for about five seconds and the alligator goes back to how it was before, only sort of sticking out of the water. The right buffalo that's still alive finally admits that it's an alligator, but another buffalo off-screen, having not seen the left buffalo get eaten, moos that it's a log. The video ends. After reading this, click on the word "carefully" in the instructions above this text box.
+	    </p>
+
+	</div>
+
+	<hr />
+    
+  <script type="text/javascript">
+
+    //re-enable next button by clicking on instruction text
+    function read_carefully() {
+      document.getElementById("next").disabled = false;
+    }
+
+  </script>
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!-- no previous button on first screen -->
+            </div>
+            <div class="col-xs-8">
+            </div>
+            <div class="col-xs-2">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                Next <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>

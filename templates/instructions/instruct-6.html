@@ -1,0 +1,50 @@
+<div id="container-instructions">
+
+    <h1>Instructions</h1>
+
+    <hr />
+
+    <div class="instructions well">
+
+        <p>Now, you are ready to start the movie recall task!</p>
+
+        <p>Please read the instruction on the next screen carefully <br>and describe the movie in your own words with as much details as possible!</p>
+        <p><b>Note:</b> You need to describe the "2nd" movie you watched, <br>not the "example" movie we showed you first.</p>
+
+        <script type="text/javascript">
+            //console.log(psiTurk.getInstructionIndicator())
+
+			//disable next button for a specied time delay following load
+			setTimeout(function() {
+				document.getElementById("next").disabled = false}, Instruct_Delay)
+
+        </script>
+
+    </div>
+
+    <hr />
+
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            	<!--  Maybe not previous button on this screen? -->
+            	<!--
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg previous">
+                <span class="glyphicon glyphicon-arrow-left"></span> Previous
+                </button>
+            	-->
+            </div>
+            <div class="col-xs-8">
+            	<center>
+	                <button type="button" id="next" value="next" class="btn btn-success btn-lg continue" disabled>
+	                Begin experiment! <span class="glyphicon glyphicon-arrow-right"></span>
+	                </button>
+	            </center>
+            </div>
+            <div class="col-xs-2">
+
+            </div>
+        </div>
+    </div>
+
+</div>

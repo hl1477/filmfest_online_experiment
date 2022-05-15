@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+#description_instructions {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 1.1em;
+}
+#description_picture {
+  text-align: center;
+}
+#description_notes {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 75%;
+}
+#description_input {
+  text-align: center;
+  font-size: 24pt;
+  line-height: normal;
+  display: block;
+  margin: 0 auto;
+  pointer-events: none;
+}
+#description_focus {
+  text-align: center;
+  font-size: 18pt;
+  line-height: 1.1em;
+  display: block;
+  margin: 0 auto;
+}
+#button_box {
+  text-align: center;
+  font-size: 24pt;
+}
+
+</style>
+</head>
+<div id="container-typetext">
+    <div id="description_instructions" class="stim-div">
+      <p><br><br><br><b>Use the keyboard to describe the picture below.<br><br></b></p> 
+    </div>
+    <div id="description_picture" class="stim-div">
+      <img id="pracimg" src="{{ server_location }}/static/images/pracimg.jpg" alt="prac img" margin-left="auto" margin-right="auto" display="block" width="372" height="259" /> <br><br>
+    </div>
+    <div id="description_notes" class="stim-div">
+      <p><font size=4 color=red><b>Note #1</b>: you will <i>not</i> be able to use backspace beyond the sentence you are currently writing. </font></p>
+      <p><font size=4 color=red><b>Note #2</b>: you will <i>not</i> be able to use your cursor on the textbox. <br><i>To reselect the text box, click the "Activate the Text Box" button!</i></font></p>
+    </div>
+
+    <br>
+    <textarea id="description_input" tabindex="-1" rows="1" cols="50" placeholder="Type here!" name="description" style="overflow:hidden;resize:none;"  onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete="off" autofocus="autofocus"></textarea>
+    <br>
+
+    <button id="description_focus" type="button" onclick="getfocus()">Activate the Text Box!</button> <br><br>
+
+      <script type="text/javascript">
+      //console.log(psiTurk.getInstructionIndicator())
+
+        //define variable  for description  input
+        var inp = document.getElementById('description_input');
+
+        //add event listener to prevent selecting
+        inp.addEventListener('select', function() {
+          this.selectionStart = this.selectionEnd;
+        }, false);
+
+        //add event listener to prevent inappropriate  keypresses
+        inp.addEventListener('keydown', function(event) {
+          const key = event.key; // const {key} = event; ES6+
+          if (key === "Backspace") {
+           if(inp.value.slice(-1) === "?" || inp.value.slice(-1) === "!" || inp.value.slice(-1) === "."){
+            event.preventDefault();
+           }
+          } else if (key == "Enter" || key == "ArrowLeft"  || key == "ArrowRight" || key == "ArrowUp" || key == "ArrowDown") {
+            event.preventDefault();
+          }
+        });
+
+        //define function to refocus on text box
+        function getfocus() {
+          document.getElementById("description_input").focus();
+        }
+
+        //disable next button for a specied time delay following load
+        setTimeout(function() {
+          document.getElementById("next").disabled = false}, Picture_Delay)
+
+      </script>
+
+      <div id=button_box class="instructionsnav">
+          <div class="row">
+              <div class="col-xs-8">
+              </div>
+              <div class="col-xs-2">
+                  <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue" disabled>
+                  Finished! <span class="glyphicon glyphicon-arrow-right"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+    </div>
+
+</html>

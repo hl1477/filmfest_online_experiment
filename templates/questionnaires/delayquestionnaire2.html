@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+    form .statement {
+        display:block;
+        font-size: 16px;
+        padding: 30px 0 0 4.25%;
+        margin-bottom:10px;
+    }
+    form .likert {
+      list-style:none;
+      width:100%;
+      margin:0;
+      padding:0 0 25px;
+      display:block;
+      border-bottom:2px solid #efefef;
+    }
+    form .likert:last-of-type {border-bottom:0;}
+    form .likert:before {
+      content: '';
+      position:relative;
+      top:11px;
+      left:8%;
+      display:block;
+      background-color:darkgray;
+      height:3px;
+      width:82%;
+    }
+    form .likert li {
+      display:inline-block;
+      width:16%; 
+      text-align:center;
+      vertical-align: top;
+    }
+    form .likert li input[type=radio] {
+      display:block;
+      position:relative;
+      top:0;
+      left:50%;
+      margin-left:-6px;
+    }
+    form .likert li label {
+        width:100%;
+        font-size: 16px;
+        font-weight: lighter;
+        }
+    </style>
+</head>
+
+<div id="container-questionnaire">
+    <h1>Pre-recall task 2/3</h1>
+
+    <hr>
+
+    <p><b>Please answer the following questions and click "Continue".</b></p>
+    
+    <div class="instructions well">
+        
+        <div class="row question">
+           <b>5.</b> Please indicate how well each of the following statements describes yourself by clicking on the scale below.<br>
+
+          <form action="">
+
+            <label class="statement">I have difficulty maintaining focus on simple or repetitive work.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="1"><label>Almost never</label></li>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="2"><label>Very infrequently</label></li>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="3"><label>Somewhat infrequently</label></li>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="4"><label>Somewhat frequently</label></li>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="5"><label>Very frequently</label></li>
+              <li><input type="radio" id="MWQ1" name="MWQ1" value="6"><label>Almost always</label></li>
+            </ul>
+
+            <label class="statement">While reading, I find I haven't been thinking about the text and must therefore read it again.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="1"><label>Almost never</label></li>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="2"><label>Very infrequently</label></li>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="3"><label>Somewhat infrequently</label></li>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="4"><label>Somewhat frequently</label></li>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="5"><label>Very frequently</label></li>
+              <li><input type="radio" id="MWQ2" name="MWQ2" value="6"><label>Almost always</label></li>
+            </ul>
+
+            <label class="statement">I do things without paying full attention.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="1"><label>Almost never</label></li>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="2"><label>Very infrequently</label></li>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="3"><label>Somewhat infrequently</label></li>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="4"><label>Somewhat frequently</label></li>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="5"><label>Very frequently</label></li>
+              <li><input type="radio" id="MWQ3" name="MWQ3" value="6"><label>Almost always</label></li>
+            </ul>
+              
+            <label class="statement">I find myself listening with one ear, thinking about something else at the same time.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="1"><label>Almost never</label></li>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="2"><label>Very infrequently</label></li>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="3"><label>Somewhat infrequently</label></li>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="4"><label>Somewhat frequently</label></li>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="5"><label>Very frequently</label></li>
+              <li><input type="radio" id="MWQ4" name="MWQ4" value="6"><label>Almost always</label></li>
+            </ul>
+              
+            <label class="statement">I mind-wander during lectures or presentations.</label>
+            <ul class='likert'>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="1"><label>Almost never</label></li>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="2"><label>Very infrequently</label></li>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="3"><label>Somewhat infrequently</label></li>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="4"><label>Somewhat frequently</label></li>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="5"><label>Very frequently</label></li>
+              <li><input type="radio" id="MWQ5" name="MWQ5" value="6"><label>Almost always</label></li>
+            </ul>
+            </form>
+        </div> 
+    
+    </div> 
+    
+    <div class="instructionsnav">
+        <div class="row">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-7">
+            </div>
+            <div class="col-xs-3">
+                <button type="button" id="next" value="next" class="btn btn-primary btn-lg continue">
+                    Continue <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
